@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@500;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Roboto', Inter, Arial, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+  --color-navy: #0B3A75;
+  --color-navy-deep: #082C5A;
+  --color-blue: #4F9BF5;
+  --color-blue-light: #7DB4FA;
+  --color-app: #F3F6FB;
+  --color-ink: #1B2A41;
+  --color-muted: #6B7A90;
+  --color-line: #DDE5F0;
+  --color-success: #2E9E5B;
+  --color-income: #CFE8FF;
+  --color-income-accent: #3B94D9;
+  --color-expense: #FFD9C2;
+  --color-expense-accent: #E8743B;
+  --color-danger: #C62828;
+  --color-warning: #F5B301;
+  --shadow-soft: 0 4px 16px rgba(11,58,117,0.12);
+}
+
+body { background: var(--color-app); color: var(--color-ink); font-family: var(--font-sans); }
+.num { font-variant-numeric: tabular-nums; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+.rise { animation: rise .35s ease-out both; }
+@keyframes floaty { 0%,100% { transform: translateY(0) rotate(var(--r,0deg)) } 50% { transform: translateY(-12px) rotate(var(--r,0deg)) } }
+.floaty { animation: floaty 6s ease-in-out infinite; }

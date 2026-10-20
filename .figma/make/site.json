@@ -1,0 +1,10 @@
+{
+  "description": "Manage class contributions effortlessly with this app, allowing treasurers to record payments and expenses while members view their financial status.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
